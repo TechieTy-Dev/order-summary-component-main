@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    background: var(--pale-blue);
+}
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --white-blue: hsl(225, 100%, 98%);
+    --desat-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+h1{
+    font-weight: 900;
+    margin-top: 2rem;
+}
+p{
+    font-weight: 500;
+    color: var(--desat-blue);
+    width: 300px;
+    line-height: 26px;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-blue);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 18px;
+    text-align: center;
+}
+.card img{
+    border-radius: 12px 12px 0px 0px;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card h1{
+    margin-bottom: 1rem;
+}
+.subscription{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsla(225, 100%, 94%, 0.25);
+    padding:1rem;
+    border-radius: 24px;
+    width: 90%;
+    margin-top: 2rem;
+}
+.subscription img{
+    margin-left:1rem;
+    width: 12%;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+.price p{
+    width: 100px;
+}
+.subscription a{
+    text-decoration: underline;
+}
+.subscription a:hover{
+    text-decoration: none;
+    color:hsl(245, 75%, 52%);
+}
+.blue-btn{
+    width: 90%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 12px;
+    background: var(--bright-blue);
+    color: var(--white-blue);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.blue-btn:hover{
+    background: hsla(245, 75%, 52%, 0.7);
+}
+.cancel-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.cancel-order:hover{
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
+@media screen and (min-width: 767px) {
+    .container{
+        width: 40%;
+    }
+}
